@@ -71,5 +71,36 @@ a {
     text-decoration: none;
 }
 
-/* Specific Styles */
+/* Header */
 
+header {
+    Background: #026670;
+    height: 10vh;
+    padding: 0 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* margin: 2% 0; */
+}
+
+nav a {
+    background: #EDEAE5;
+    padding: 2px 2px;
+    color: black;
+    /* border: 1px solid #9FEDD7; */
+}
+
+nav a:first-child {
+    border-radius: 10% 0 0 10%;
+}
+
+nav a:last-child {
+    border-radius: 0 10% 10% 0;
+}
+
+nav a:hover {
+    background: rgba(237, 234, 229, 0.466);
+    color: #026670;
+}
+
+/* Main Section */
