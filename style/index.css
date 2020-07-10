@@ -1,6 +1,6 @@
 /* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
+v2.0 | 20110126
+License: none (public domain)
 */
 
 html, body, div, span, applet, object, iframe,
@@ -16,9 +16,10 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
+    margin: 0;
 	padding: 0;
 	border: 0;
+    /* border: 1px solid grey; */
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -51,6 +52,10 @@ table {
 
 /* General Styles */
 
+* {
+    max-width: 100%;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -76,16 +81,20 @@ a {
 header {
     Background: #026670;
     height: 10vh;
-    padding: 0 2%;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     /* margin: 2% 0; */
 }
 
+nav {
+    margin: 1%;
+}
+
 nav a {
     background: #EDEAE5;
-    padding: 2px 2px;
+    padding: 2px;
     color: black;
     /* border: 1px solid #9FEDD7; */
 }
@@ -104,3 +113,80 @@ nav a:hover {
 }
 
 /* Main Section */
+
+.main {
+
+    display: flex;
+    align-items: flex-end;
+}
+
+.main .img {
+    /* box-sizing: content-box;
+    want to incl the margin in the 50% of screen, vs img:50%+margin:4%
+    not border-box either though....*/
+    margin: 2%;
+}
+
+.blurb {
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+/* Gallery */
+
+.gallery {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.gallery div {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;
+    align-items: center; */
+    height: 200px;
+    overflow: hidden;
+    margin: 2%;
+    text-align: center;
+    padding: .5%;
+    /* margin: 0 auto; */
+
+    /* max-height: auto; */
+    /*attempted solution for cropping the images to all be the same size */
+}
+
+/* .gallery div div {
+} */
+
+.gallery img {
+    border: 2px solid #026670;
+    border-radius: 1%;
+    overflow: hidden;
+    /* flex-shrink:0;
+    min-width:100%;
+    min-height:100% */
+    /* display: inline; */
+    /* object-fit: contain; */
+}
+
+/* Footer */
+
+footer {
+    background: #9FEDD7;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3%;
+}
+footer a {
+    color: #026670;
+    background: #ffffff;
+    padding: .5%;
+    /* margin: 1% */
+}
