@@ -124,6 +124,7 @@ nav a:hover {
     /* box-sizing: content-box;
     want to incl the margin in the 50% of screen, vs img:50%+margin:4%
     not border-box either though....*/
+    /* max-width: 100%; */
     margin: 2%;
 }
 
@@ -166,12 +167,21 @@ nav a:hover {
 .gallery img {
     border: 2px solid #026670;
     border-radius: 1%;
+    height: 110px;
     overflow: hidden;
-    /* flex-shrink:0;
+    /* flex-shrink:0;*/
     min-width:100%;
-    min-height:100% */
+    /* min-height:100% */
     /* display: inline; */
     /* object-fit: contain; */
+}
+
+.gallery a {
+    color: black;
+}
+
+.gallery a:hover {
+    background: #FEF97C;
 }
 
 /* Footer */
@@ -184,9 +194,30 @@ footer {
     align-items: center;
     padding: 3%;
 }
-footer a {
+footer .mail {
     color: #026670;
     background: #ffffff;
     padding: .5%;
-    /* margin: 1% */
+    margin: 1%
+}
+
+footer .mail:hover {
+    color:#EDEAE5;
+    background: #026670;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+footer div a {
+    margin: 1%;
+    padding: 1%;
+    color: #026670
+}
+
+footer div a:hover {
+    color:#EDEAE5;
+    background: #026670;
 }
