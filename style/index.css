@@ -139,22 +139,21 @@ nav a:hover {
 
 .gallery {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-evenly;
 }
 
 .gallery div {
+    margin: 2%;
+    /* padding: .5%; */
     width: 20%;
     display: flex;
+    text-align: center;
     flex-direction: column;
     /* justify-content: center;
     align-items: center; */
-    height: 200px;
-    overflow: hidden;
-    margin: 2%;
-    text-align: center;
-    padding: .5%;
+    /* height: 200px; */
+    /* overflow: hidden; */
     /* margin: 0 auto; */
 
     /* max-height: auto; */
@@ -167,10 +166,10 @@ nav a:hover {
 .gallery img {
     border: 2px solid #026670;
     border-radius: 1%;
-    height: 110px;
-    overflow: hidden;
+    /* height: 110px; */
+    /* overflow: hidden; */
     /* flex-shrink:0;*/
-    min-width:100%;
+    /* min-width:100%; */
     /* min-height:100% */
     /* display: inline; */
     /* object-fit: contain; */
