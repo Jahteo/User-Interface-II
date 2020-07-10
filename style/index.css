@@ -85,7 +85,10 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    /* margin: 2% 0; */
+}
+
+h2 {
+    text-transform: capitalize;
 }
 
 nav {
@@ -96,7 +99,6 @@ nav a {
     background: #EDEAE5;
     padding: 2px;
     color: black;
-    /* border: 1px solid #9FEDD7; */
 }
 
 nav a:first-child {
@@ -115,17 +117,16 @@ nav a:hover {
 /* Main Section */
 
 .main {
-
     display: flex;
     align-items: flex-end;
 }
 
+.main div {
+    width: 45%;
+}
+
 .main .img {
-    /* box-sizing: content-box;
-    want to incl the margin in the 50% of screen, vs img:50%+margin:4%
-    not border-box either though....*/
-    /* max-width: 100%; */
-    margin: 2%;
+    margin: 3%;
 }
 
 .blurb {
@@ -145,34 +146,15 @@ nav a:hover {
 
 .gallery div {
     margin: 2%;
-    /* padding: .5%; */
     width: 20%;
     display: flex;
     text-align: center;
     flex-direction: column;
-    /* justify-content: center;
-    align-items: center; */
-    /* height: 200px; */
-    /* overflow: hidden; */
-    /* margin: 0 auto; */
-
-    /* max-height: auto; */
-    /*attempted solution for cropping the images to all be the same size */
 }
-
-/* .gallery div div {
-} */
 
 .gallery img {
     border: 2px solid #026670;
     border-radius: 1%;
-    /* height: 110px; */
-    /* overflow: hidden; */
-    /* flex-shrink:0;*/
-    /* min-width:100%; */
-    /* min-height:100% */
-    /* display: inline; */
-    /* object-fit: contain; */
 }
 
 .gallery a {
