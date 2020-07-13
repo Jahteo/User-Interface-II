@@ -100,7 +100,6 @@ nav a {
     background: #EDEAE5;
     padding: 2px;
     color: black;
-    /* display: inline-block; */
 }
 
 nav a:first-child {
@@ -140,7 +139,6 @@ nav a:hover {
 
 .main a {
     color: black;
-    /* border: 2px solid black; */
 }
 
 /* Gallery */
@@ -248,7 +246,7 @@ footer div a:hover {
         margin-bottom: 2%;
     }
     .main p {
-        text-align: justify;
+        text-align: left;
     }
     /* Gallery */
     .gallery div {
