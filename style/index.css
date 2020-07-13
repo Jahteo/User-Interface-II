@@ -138,11 +138,10 @@ nav a:hover {
     justify-content: flex-end;
 }
 
-/* .main a {
+.main a {
     color: black;
-    border: 2px solid black;
-
-} */
+    /* border: 2px solid black; */
+}
 
 /* Gallery */
 
@@ -241,10 +240,12 @@ footer div a:hover {
     nav a:last-child {
         border-radius: 0 0 10% 10%;
     }
-    
     /* Main Section */
     .main {
         text-align: center;
+    }
+    .main a {
+        margin-bottom: 2%;
     }
     .main p {
         text-align: justify;
@@ -252,6 +253,9 @@ footer div a:hover {
     /* Gallery */
     .gallery div {
         width: 45%;
+    }
+    .gallery .optional {
+        display: none;
     }
     /* Footer */
     footer div {
