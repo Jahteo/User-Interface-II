@@ -231,7 +231,14 @@ footer div a:hover {
     nav {
         display: flex;
         flex-direction: column;
+        width: 80%;
     }
+    nav a {
+        text-align: center;
+        /* width: 100%; */
+        padding: 7px;
+    }
+
     nav a:first-child {
         border-radius: 10% 10% 0 0;
     }
